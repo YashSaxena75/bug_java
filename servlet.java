@@ -33,7 +33,7 @@ public class EchoServlet extends HttpServlet {
             out.println("<p>Name: MISSING</p>");
          } else {
             //out.println("<p>Name: " + username + "</p>");
-              response.getWriter().write("<p>Hello, " + username + "!</p>");
+              StringEscapeUtils.escapeHtml("<p>Hello, " + username + "!</p>");
          }
  
          // Retrieve the value of the query parameter "password" (from password field)
