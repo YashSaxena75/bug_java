@@ -32,7 +32,8 @@ public class EchoServlet extends HttpServlet {
                || (username = htmlFilter(username.trim())).length() == 0) {
             out.println("<p>Name: MISSING</p>");
          } else {
-            out.println("<p>Name: " + username + "</p>");
+            //out.println("<p>Name: " + username + "</p>");
+              response.getWriter().write("<p>Hello, " + username + "!</p>");
          }
  
          // Retrieve the value of the query parameter "password" (from password field)
