@@ -6,7 +6,7 @@ int main()
 {
 char input [255];
 char password [4];
-std:: cout << "Enter password:
+std:: cout << "Enter password:"
 std:: cin >> input;
 int i = 0:
 for (i=0;i<4; i++)
